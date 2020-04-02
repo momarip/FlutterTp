@@ -1,0 +1,11 @@
+{
+    "hello": "Bonjour!",
+    "Welcome": "Welcome to the place where you can \n enjoy planning for your life",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "login": "Se connecter",
+    "save": "Sauvgarder",
+    "cancel": "Annuler",
+    "back": "retour"
+}
