@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertp/UI/Gallery.dart';
 import 'package:fluttertp/UI/CameraPage.dart';
 import 'package:fluttertp/UI/GalleryData.dart';
-import 'package:fluttertp/UI/Home.dart';
+import 'package:fluttertp/UI/home.dart';
 import 'package:fluttertp/UI/WeatherForm.dart';
 import 'package:fluttertp/UI/Quiz.dart';
 import 'package:fluttertp/UI/Weather.dart';
@@ -23,13 +23,13 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final routes = <String, WidgetBuilder>{
-   Home.tag: (context) => Home(),
-   Quiz.tag: (context) => Quiz(),
-   Weather.tag: (context) => Weather("Oujda"),
-   Gallery.tag: (context) => Gallery(),
-   WeatherForm.tag: (context) => WeatherForm(),
-   GalleryData.tag: (context) => GalleryData(""),
-   CameraPage.tag: (context) => CameraPage(),
+  Home.tag: (context) => Home(),
+  Quiz.tag: (context) => Quiz(),
+  Weather.tag: (context) => Weather(""),
+  Gallery.tag: (context) => Gallery(),
+  WeatherForm.tag: (context) => WeatherForm(),
+  GalleryData.tag: (context) => GalleryData(""),
+  CameraPage.tag: (context) => CameraPage(),
   };
   final MainModel _model = MainModel();
   @override
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
           Locale('FR', '')
         ],
         localizationsDelegates: [
-          AppLocalizations.delegate,
+          //AppLocalizations.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           FallbackLocalizationDelegate()

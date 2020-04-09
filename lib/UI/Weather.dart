@@ -31,7 +31,7 @@ class _Weather extends State<Weather> {
   void initState() {
     super.initState();
     String url =
-        'http://openweathermap.org/data/2.5/forecast?q=${this.widget.city}&appid=b6907d289e10d714a6e88b30761fae22';
+        'http://openweathermap.org/data/2.5/forecast?q=${this.widget.city}&appid=f683469f11c91c0a570bfcc92fbff0e1';
     print(url);
     this.getData(url);
   }

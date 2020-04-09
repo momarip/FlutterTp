@@ -15,11 +15,12 @@ class _Home extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
         title: Text(
-          "TP1",
+          "My App",
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: Colors.white,
@@ -40,7 +41,7 @@ class _Home extends State<Home> {
             padding: EdgeInsets.all(10.0),
             child: CircleAvatar(
               backgroundImage: NetworkImage(
-                  "https://avatars1.githubusercontent.com/u/48822358?s=400&u=c1f455c093db3478e025a9846f1880a0f10acf1d&v=4"),
+                  "https://avatars2.githubusercontent.com/u/52053276?s=460&u=474ac96e1027f59e5b9c8cd7986907d439686a3e&v=4"),
             ),
           ),
         ),
@@ -59,24 +60,24 @@ class _Home extends State<Home> {
                   onTap: () {},
                 )
               ],
-              accountName: Text("El Outmani Moustapha",
+              accountName: Text("El yousfi Mohammed",
                   style: TextStyle(
                     color: Colors.black,
                   )),
-              accountEmail: Text("moustapha.eloutmani@gmail.com",
+              accountEmail: Text("momarip.el.yousfi@gmail.com",
                   style: TextStyle(
                     color: Colors.black,
                   )),
               decoration: BoxDecoration(
-                  /*color: primary,
+                  color: Theme.of(context).primaryColor,
                 image: DecorationImage(
                   image: ExactAssetImage('assets/images/lake.jpeg'),
                   fit: BoxFit.cover,
-                ),*/
+                ),
                   ),
               currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(
-                      "https://avatars1.githubusercontent.com/u/48822358?s=400&u=c1f455c093db3478e025a9846f1880a0f10acf1d&v=4")),
+                      "https://avatars2.githubusercontent.com/u/52053276?s=460&u=474ac96e1027f59e5b9c8cd7986907d439686a3e&v=4")),
             ),
             ListTile(
               leading: Icon(
@@ -125,4 +126,5 @@ class _Home extends State<Home> {
       ),
     );
   }
+  
 }

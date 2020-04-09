@@ -59,7 +59,7 @@ class _GalleryData extends State<GalleryData> {
 
   void loadData() {
     String url =
-        "https://pixabay.com/api/?key=5832566-81dc7429a63c86e3b707d0429&q=${widget.keyWord}&page=$currentPage&per_page=$pageSize";
+        "https://pixabay.com/api/?key=15963121-80e89576ae7b3c27492297f22&q=${widget.keyWord}&page=$currentPage&per_page=$pageSize&image_type=photo";
     print(url);
     this.getData(url);
   }
